@@ -8,30 +8,28 @@
 </head>
 <body>
     <div id="calculator">
-        <input id ="display" readonly>
+        <label for="display" class="visually-hidden">Calculator Display</label>
+        <input id="display" readonly placeholder="0" title="Calculator display">
         <div id="keys">
-            <button class = "opreatorBtn" class = "opreatorBtn" id ="clear" onclick="clearDisplay()">C</button>
-            <button class = "opreatorBtn" class = "green" id ="paranthesis" onclick="bracket()">( )</button>
-            <button class = "opreatorBtn" class = "green"onclick="appendTodisplay('%')">%</button>
-            <button class = "opreatorBtn" class = "green"onclick="appendTodisplay('/')">/</button>
+            <button class="operatorBtn" id="clear" onclick="clearDisplay()">C</button>
+            <button class="operatorBtn green" id="parenthesis" onclick="bracket()">( )</button>
+            <button class="operatorBtn green" onclick="appendTodisplay('%')">%</button>
+            <button class="operatorBtn green" onclick="appendTodisplay('/')">/</button>
             <button onclick="appendTodisplay('7')">7</button>
             <button onclick="appendTodisplay('8')">8</button>
             <button onclick="appendTodisplay('9')">9</button>
-            <button class = "opreatorBtn" class = "green"onclick="appendTodisplay('*')">*</button>
+            <button class="operatorBtn green" onclick="appendTodisplay('*')">*</button>
             <button onclick="appendTodisplay('4')">4</button>
             <button onclick="appendTodisplay('5')">5</button>
             <button onclick="appendTodisplay('6')">6</button>
-            <button class = "opreatorBtn" class = "green"onclick="appendTodisplay('-')">-</button>
+            <button class="operatorBtn green" onclick="appendTodisplay('-')">-</button>
             <button onclick="appendTodisplay('1')">1</button>
             <button onclick="appendTodisplay('2')">2</button>
             <button onclick="appendTodisplay('3')">3</button>
-            <button class = "opreatorBtn" class = "green"onclick="appendTodisplay('+')">+</button>
+            <button class="operatorBtn green" onclick="appendTodisplay('+')">+</button>
             <button onclick="appendTodisplay('0')">0</button>
-            <button class = "opreatorBtn" onclick="appendTodisplay('.')">.</button>
-            
-            <button class = "opreatorBtn"class = "background" onclick="calculate()">=</button>
-
-        
+            <button class="operatorBtn" onclick="appendTodisplay('.')">.</button>
+            <button class="operatorBtn background" onclick="calculate()">=</button>
         </div>
     </div>
     <script src="script.js"></script>
